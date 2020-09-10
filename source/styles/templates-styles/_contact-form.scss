@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+.contact-form{
+  background-color: #709dca;
+  padding-top:110px;
+  padding-bottom: 345px;
+
+  scroll-behavior: smooth; 
+  overflow: hidden;
+
+  .contact-form__text, .contact-form__title {
+    text-align: center;
+    margin: 0 5%;
+
+  }
+  .contact-form__title {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .contact-form__text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 24px;
+
+    margin-bottom: 35px;
+  }
+  .input-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .input-container__input {
+      width:280px;
+      height:45px;
+      
+      border:none;
+      border-radius: 2px;
+
+      background:#ffffff;
+
+      font-size: 13px;
+      color: #a9a9a9;
+      font-weight: 400;
+      font-family: "Open Sans";
+
+      margin-right: 15px;
+      &:focus {
+        outline:none;
+        box-shadow: 2px 0px 23px -11px rgba(184,255,215,1);
+      }
+    }
+    .input-container__input.request-btn {
+      width: 210px;
+      height: 45px;
+
+      background-color: #ffbb42;
+
+      color:#ffffff;
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-size:14px;
+      letter-spacing: 1.5px;
+      font-weight: 300;
+      text-decoration: none;
+
+      transition: transform 0.1 ease-in-out;
+      transform: scale(1);
+
+      &:focus {
+        outline:none;
+        box-shadow: none;
+        border:none;
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.005);
+      }
+
+    }
+
+    .input-container__input.name {
+
+      background: #ffffff url(../assets/images/person-icon.png) no-repeat scroll 7px 7px;
+      background-position: 10px;
+      padding-left:40px;
+    }
+    .input-container__input.email {
+      background: #ffffff url(../assets/images/email-icon.png) no-repeat scroll 7px 7px;
+      background-position: 10px;
+      padding-left:40px;
+
+    }
+    .input-container__input.phone {
+      background: #ffffff url(../assets/images/phone-icon.png) no-repeat scroll 7px 7px;
+      background-position: 10px;
+      padding-left:40px;
+
+    }
+
+  }
+}
+
+
+@media only screen and (max-width:1110px) {
+  .contact-form {
+    padding-bottom: 145px;
+    .contact-form__title {
+      font-size:1.5em;
+    }
+    .contact-form__text {
+      font-size:1em;
+    }
+    .input-container {
+            flex-flow:column;
+      align-items:center;
+      .input-container__input {
+        margin-bottom: 15px;
+      }
+      .input-container__input.request-btn  {
+        margin-top: 10px;
+      }
+    }
+
+  }
+}
+@media only screen and (max-width:330px) {
+  .contact-form {
+    padding-bottom: 145px;
+    .input-container {
+      .input-container__input {
+        width:230px;
+        margin-right:0px;
+      }
+
+    }
+
+  }
+}

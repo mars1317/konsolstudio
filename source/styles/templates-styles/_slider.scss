@@ -1,0 +1,138 @@
+@import '../styles/templates-styles/variables/hotspots.scss';
+.laptop-slider {
+  position: absolute;
+  z-index: 50;
+
+  transform: translateX(-50%);
+  left:50%;
+  top:-300px;
+
+  background-image: url(../assets/images/laptop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height:350px;
+  width:650px;
+  .inner-slider-container {
+    height: calc(100% - 80px);
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    margin-top: 20px;
+    .slider {
+      height:100%;
+
+      position: relative;
+      z-index: 100;
+      .slick-list {
+        overflow:hidden;
+        height: 100% !important;
+      }
+      .slider-item {
+        height:270px;
+        img {
+          width: 100%;
+          height: 100%;
+    
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+.slick-slider{
+  margin:0 auto;
+}
+  .slick-track{
+    display: flex;
+    height: 100%;
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+  .slick-dots{
+    z-index: 1000;
+    top:100px;
+
+    display: flex;
+    justify-content: center;
+    
+    list-style: none;
+    padding: 0;
+
+  li {
+      margin-right: 15px;
+    
+
+    button{
+      width: 12px;
+      height: 12px;
+
+      padding:0;
+
+      border-radius: 50%;
+      border: 2px solid #dedfe0;
+      outline:none;
+
+      color: transparent;
+      font-size:0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  li.slick-active{
+    button{
+      border: 2px solid #1ca8dd;
+    }
+  }
+}
+
+@media only screen and (max-width:1110px) {
+  .laptop-slider {
+    height:250px;
+    width:400px;
+    top:-100px;
+    .inner-slider-container {
+      width: calc(100% - 120px);
+      height: calc(100% - 90px );
+
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+  .slider {
+    .slick-dots {
+      top: 60px;
+    }
+  }
+}
+@media only screen and (max-width:750px) {
+  .laptop-slider {
+
+    height:250px;
+    width:400px;
+  }
+
+}
+
+@media only screen and (max-width:420px) {
+  .laptop-slider {
+
+    height:250px;
+    width:330px;
+
+    .inner-slider-container {
+
+      width: calc(100% - 100px);
+      height: calc(100% - 120px );
+
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+  .slider {
+    .slick-dots {
+      top: 60px;
+    }
+  }
+}
