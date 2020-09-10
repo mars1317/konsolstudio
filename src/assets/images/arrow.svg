@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 25" width="111" height="25">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #9aca40;stroke-linecap:round;stroke-width: 2;stroke-dasharray: 0,4 } 
+	</style>
+	<g id="How it work">
+		<g id="Arrow's">
+			<g id="Arrow_1">
+				<path id="Shape 2" class="shp0" d="M0.38 22.26C65.2 -29.54 111.75 25.32 111.75 25.32" />
+			</g>
+		</g>
+	</g>
+</svg>
