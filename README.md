@@ -1,1 +1,1 @@
- https://servatmandmariam1.github.io/konsolstudio/
+ https://mars1317.github.io/konsolstudio/
